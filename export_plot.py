@@ -59,7 +59,7 @@ def create_mask():
 #########################################
 ############ Argument parser ############
 my_parser = argparse.ArgumentParser(description='Description' , fromfile_prefix_chars='@')
-my_parser.add_argument('-i',  default = 'example_plot.png',type=str  ,help='Input image')
+my_parser.add_argument('-i',                         ,type=str  ,help='Input image')
 my_parser.add_argument('-o',  default = 'data.csv'   ,type=str  ,help='Output file name.')
 my_parser.add_argument('-sz', default = 1            ,type=float,help='Image resize factor.')
 my_parser.add_argument('-th', default = 0.95          ,type=float,help='Color similarity threshold.')
@@ -82,6 +82,9 @@ frame     = cv2.imread(filepath)
 frame  = cv2.resize(frame, None, fx=resize_factor, fy=resize_factor)
 height, width, _ = frame.shape
 
+print('In the window displaying the image, click and drag to delimit the bounding box')
+print('of the axis. It does not need to cover the whole figure, just some limits to calibrate')
+print('the units of both axes.')
 
 
 ###################################
@@ -110,6 +113,14 @@ print('Thank you, Y-axis limits are set to (%s, %s)' % (ymin, ymax) )
 
     
     
+print('Now click on the image to select the color of the data to be extracted.')
+print('Data included by your selection will be colored in intense green.')
+print('Press the letter q in the keyboard when satisfied with the results.')
+print('')
+print('<W> If some pixels are included there are two options:')
+print('    - to specify a different color similarity threshold when running this script, using -th')
+print('    - to erase manually those pixels right-clicking and dragging in the image.')
+
     
 ###################################
 ## SELECT LINES

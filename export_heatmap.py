@@ -17,7 +17,7 @@ from sklearn.linear_model import LinearRegression
 #########################################
 ############ Argument parser ############
 my_parser = argparse.ArgumentParser(description='Description' , fromfile_prefix_chars='@')
-my_parser.add_argument('-i',  default = 'example_heatmap.png',type=str  ,help='Input image')
+my_parser.add_argument('-i',                         ,type=str  ,help='Input image')
 my_parser.add_argument('-o',  default = 'data.csv'   ,type=str  ,help='Output file name.')
 my_parser.add_argument('-sz', default = 1            ,type=float,help='Image resize factor.')
 my_parser.add_argument('-th', default = 0.95          ,type=float,help='Color similarity threshold.')
@@ -40,6 +40,9 @@ frame     = cv2.imread(filepath)
 frame  = cv2.resize(frame, None, fx=resize_factor, fy=resize_factor)
 height, width, _ = frame.shape
 
+print('In the window displaying the image, click and drag to delimit the bounding box')
+print('of the axis. It does not need to cover the whole figure, just some limits to calibrate')
+print('the units of both axes.')
 
 
 ###################################
@@ -80,7 +83,7 @@ for xx in range(int(x_num_pts)):
 
 
 if input('Is there a colorbar legend? [y/n]: ')=='y':
-    print('Please select the colorbar legend.')
+    print('Please select the colorbar legend with a bounding box as in the previous step.')
     colorbar = cv2.selectROI(frame)
     cv2.destroyAllWindows()
     
