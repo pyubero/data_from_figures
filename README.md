@@ -9,7 +9,7 @@
     `-th VALUE` to change the color similarity threshold that recognizes poits/lines. Value can be any number in [0,1]. default = 0.95
 	`-p  VALUE` to specify the output precision in numbers of decimals. Value can be any integer >1. Default=2  
 
-2 The image will pop up and you need to specify the axis limits by click-and-dragging the bounding box.
+2 The image will pop up and you need to specify the axis limits by click-and-dragging the bounding box. Press ENTER to continue.
 
 3 Follow the questions asked in the terminal.
 
