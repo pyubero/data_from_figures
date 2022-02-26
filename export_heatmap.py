@@ -2,7 +2,26 @@
 """
 Created on Sat Feb 26 00:35:18 2022
 
-@author: Pablo
+@author: Pablo Yubero Bernabé
+https://github.com/pyubero
+
+Export data from a heatmap figure. Execute with an input image as:
+    python export_heatmap.py -i image_filepath
+
+Parameters
+----------
+-i : string, input image filepath, needs to be compatible with OpenCV
+
+-o : string, output csv filepath. Default="data.csv"
+    
+-sz: float, resize factor of the image. Specify a value different than one
+     if the input image is either too small or large to display. Default=1.
+
+-th: float, color similarity threshold. Should be a value in [0,1]. Default=0.95.
+
+-p : int, output data precision. Number of decimals of the values exported to
+    the csv file. Default=2.
+
 """
 import cv2
 import numpy as np
