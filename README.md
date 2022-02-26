@@ -1,5 +1,5 @@
 # data from figures
- This repo contains some Python scripts that I have been using to reverse-engineer figures (mainly from papers, or datasheets) to extract quantitatively their data. So far they only work for a selected number of figure types: line plots, scatter, bargraphs and heatmaps. Fortunately, these cover the vast majority of figures found around. The data is exported in a .csv file.
+This repo contains some Python scripts that I have been using to reverse-engineer figures (mainly from papers, or datasheets) to extract quantitatively their data. So far they only work for a selected number of figure types: line plots, scatter, bargraphs and heatmaps. Fortunately, these cover the vast majority of figures found around. The data is exported in a .csv file.
 
 
 # Use
