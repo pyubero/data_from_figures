@@ -15,5 +15,7 @@
 
 4 Enjoy your results in the csv file!
 
-# Some results
+## Example results of line plots
 ![](https://github.com/pyubero/data_from_figures/blob/main/results_plot.png "Results for line plots.")
+
+<img src="https://github.com/pyubero/data_from_figures/blob/main/results_plot.png" width="200"  />
