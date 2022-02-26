@@ -16,6 +16,13 @@
 4 Enjoy your results in the csv file!
 
 ## Example results of line plots
-![](https://github.com/pyubero/data_from_figures/blob/main/results_plot.png "Results for line plots.")
+<img src="https://github.com/pyubero/data_from_figures/blob/main/example_results/results_plot.png" width="300"  />
 
-<img src="https://github.com/pyubero/data_from_figures/blob/main/results_plot.png" width="200"  />
+## Example results of scatter plots
+<img src="https://github.com/pyubero/data_from_figures/blob/main/example_results/results_scatter.png" width="300"  />
+
+## Example results of bar graphs
+<img src="https://github.com/pyubero/data_from_figures/blob/main/example_results/results_bar.png" width="300"  />
+
+## Example results of heatmaps
+<img src="https://github.com/pyubero/data_from_figures/blob/main/example_results/results_heatmap.png" width="600"  />
